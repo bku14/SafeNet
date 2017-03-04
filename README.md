@@ -1,2 +1,2 @@
-# SafeNet
-CMSI402: Senior Project
+# BasketAI
+CMSI 402: Senior Project
