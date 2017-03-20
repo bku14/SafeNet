@@ -1,7 +1,7 @@
 # 4.0 Software Development Plan
 
 ## 4.1 Plan Introduction
-SafeNet is an application that aims to ease the stress of traveling with the freedom of personalized exploration. Within the application users can create "parties" with a group of users on their friends list. The user that created the party will be the party leader and can create a geo-fence, called a "SafeNet", of their preference. This application will then keep track on all party members within the geo-fence and will notify the party leader when a member has left the "SafeNet". This application will target and try to best aid teachers and the field trips they take their class to. In developing the application, the task required for me to learn are to learn how to set up my own database, storing and tracking live location data, learn more Swift for iOS, and create a user interface that is simple, but functional. 
+SafeNet is an application that aims to ease the stress of traveling with the freedom of personalized exploration. Within the application users can create "parties" with a group of users on their friends list. The user that created the party will be the party leader and can create a geo-fence, called a "SafeNet", of their preference. This application will then keep track on all party members within the geo-fence and will notify the party leader when a member has left the "SafeNet". This application will target and try to best aid teachers.
 
 Within the scope of using Firebase, I should accomplish the following tasks by the designated deadlines:
 -   Post-request (03/05)
@@ -42,7 +42,7 @@ The following items are to be delivered to the customer:
 -   Written Status Reports (04/17)
   - This document will report our current status and health of our project
 -   Final Project Presentation (05/04)
-  - This presentation will outline our the final product and the process it took to make it.
+  - This presentation will outline the final product and the process it took to make it.
 
 ## 4.2 Project Resources
 
@@ -60,7 +60,15 @@ The following items are to be delivered to the customer:
 
 | Team    | Software Used                                                                        | 
 |---------|--------------------------------------------------------------------------------------|  
-| iOS     | CocoaPods, Firebase, Sublime Text Editor, Xcode                                      |   
+| iOS     | CocoaPods, Firebase, Xcode                                      |   
+
+-  CocaoPods
+  - This will help manage all of the dependencies I plan to use
+-  Firebase
+  - This resource will help me store data in a sever
+-  Xcode
+  - This will be the IDE when developing this app
+
 
 ## 4.3 Project Organization
 Since this is my own project with only me as the team, there is no team organization. However, I will work on the project in the order of setting up the database, creating the front-end, and then adding functionality. I will be working on my own but also will give weekly updates during class on my progress and the difficulties I encounter. 
