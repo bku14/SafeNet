@@ -1,7 +1,7 @@
 # 4.0 Software Development Plan
 
 ## 4.1 Plan Introduction
-SafeNet is an application that aims to ease the stress of traveling with the freedom of personalized exploration. Within the application users can create "parties" with a group of users on their friends list. The user that created the party will be the party leader and can create a geo-fence, called a "SafeNet", of their preference. This application will then keep track on all party members within the geo-fence and will notify the party leader when a member has left the "SafeNet". This application will target and try to best aid teachers.
+SafeNet is an application that aims to ease the stress of traveling with the freedom of personalized exploration. Within the application users can create "parties" with a group of users on their friends list. The user that created the party will be the party leader and can create a geo-fence, called a "SafeNet", of their preference. This application will then keep track on all party members within the geo-fence and will notify the party leader when a member has left the "SafeNet". This application will target and try to best aid teachers in tracking their students during field trips and other such outings.
 
 Within the scope of using Firebase, I should accomplish the following tasks by the designated deadlines:
 -   Post-request (03/05)
