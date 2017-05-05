@@ -17,6 +17,8 @@ class StudentLoginViewController: UIViewController {
     @IBOutlet weak var teacherCodeTextField: UITextField!
     
     var ref: FIRDatabaseReference!
+    var className: String!
+    var teacherName: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +36,9 @@ class StudentLoginViewController: UIViewController {
         ref.child("classes").observeSingleEvent(of: .value, with: { (snapshot) in
             
             let value = snapshot.value as? NSDictionary
+            
+            self.teacherName = value?["teacher"] as! String! ?? ""
+            self.className   = value?["name"] as! String! ?? ""
             
             if (value?["\(self.teacherCodeTextField.text!)"]) == nil {
                 print("Teacher Code Not Found.")
@@ -81,7 +86,9 @@ class StudentLoginViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showMain" {
             let nextVC = segue.destination as! CheckLoginViewController
-            nextVC.previousVC = "Student"
+            nextVC.previousVC  = "Student"
+            nextVC.teacherName = self.teacherName
+            nextVC.className   = self.className
         }
     }
 }

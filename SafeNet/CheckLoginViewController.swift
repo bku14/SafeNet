@@ -13,6 +13,8 @@ import FirebaseDatabase
 class CheckLoginViewController: UIViewController {
     
     var previousVC = "None"
+    var className = ""
+    var teacherName = ""
     var ref: FIRDatabaseReference!
     
     override func viewDidLoad() {
@@ -20,8 +22,8 @@ class CheckLoginViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-//        checkUser()
-        self.performSegue(withIdentifier: "login", sender: nil)
+        checkUser()
+//        self.performSegue(withIdentifier: "login", sender: nil)
     }
     
     func checkUser() {
@@ -53,6 +55,14 @@ class CheckLoginViewController: UIViewController {
             }
         } else {
             self.performSegue(withIdentifier: "login", sender: nil)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "studentMain" {
+            let nextVC = segue.destination as! StudentMainViewController
+            nextVC.teacherName = self.teacherName
+            nextVC.className = self.className
         }
     }
 }

@@ -9,11 +9,16 @@
 import UIKit
 import CoreLocation
 import MapKit
+import FirebaseDatabase
 
 class StudentMainViewController: UIViewController {
     
+    @IBOutlet weak var teacherNameLabel: UILabel!
+    @IBOutlet weak var classNameLabel: UILabel!
     @IBOutlet weak var locationEnableButton: UIButton!
     
+    var className: String!
+    var teacherName: String!
     var locationEnable = false;
     fileprivate var locations = [MKPointAnnotation]()
     private lazy var locationManager: CLLocationManager = {
@@ -26,6 +31,12 @@ class StudentMainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        teacherNameLabel.text = "Teacher: \(teacherName!)"
+        classNameLabel.text   = "Class: \(className!)"
+    }
+    
+    @IBAction func notifyTeacher(_ sender: AnyObject) {
+        
     }
     
     @IBAction func locationDataEnable(_ sender: AnyObject) {

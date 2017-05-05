@@ -46,7 +46,7 @@
         <scene sceneID="3ev-Ix-Ecb">
             <objects>
                 <navigationController id="fxh-Hg-jcB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Class" id="H6s-fk-o3U"/>
+                    <tabBarItem key="tabBarItem" title="Class" image="first" id="H6s-fk-o3U"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wpW-HQ-4ju">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -172,6 +172,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOo-8d-4Fm">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2wW-bt-oxP"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Enable Location Data">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -180,17 +183,49 @@
                                     <action selector="locationDataEnable:" destination="odq-2d-ll0" eventType="touchUpInside" id="g7h-sd-XSJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIy-56-rKT">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OSs-s4-lUO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Notify Teacher">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="notifyTeacher:" destination="odq-2d-ll0" eventType="touchUpInside" id="T12-SR-o1P"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTA-2Z-ONj">
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HId-a7-dMl">
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.4039215686" green="0.2274509804" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NOo-8d-4Fm" firstAttribute="centerX" secondItem="cN6-5H-iDO" secondAttribute="centerX" id="3bE-5r-SEU"/>
-                            <constraint firstItem="HWy-ch-sXG" firstAttribute="top" secondItem="NOo-8d-4Fm" secondAttribute="bottom" constant="109" id="clu-N9-Y6f"/>
-                            <constraint firstItem="NOo-8d-4Fm" firstAttribute="leading" secondItem="cN6-5H-iDO" secondAttribute="leadingMargin" constant="3" id="kCz-kN-mDi"/>
-                            <constraint firstItem="NOo-8d-4Fm" firstAttribute="top" secondItem="MpJ-V0-Lmz" secondAttribute="bottom" constant="508" id="wbc-hG-qei"/>
+                            <constraint firstItem="HWy-ch-sXG" firstAttribute="top" secondItem="NOo-8d-4Fm" secondAttribute="bottom" constant="109" id="26d-tv-h18"/>
+                            <constraint firstItem="HId-a7-dMl" firstAttribute="leading" secondItem="hIy-56-rKT" secondAttribute="leading" id="4eo-kZ-wVN"/>
+                            <constraint firstItem="xTA-2Z-ONj" firstAttribute="leading" secondItem="cN6-5H-iDO" secondAttribute="leadingMargin" constant="3" id="AFY-vt-X1h"/>
+                            <constraint firstItem="hIy-56-rKT" firstAttribute="leading" secondItem="NOo-8d-4Fm" secondAttribute="leading" id="Aoi-CG-YW2"/>
+                            <constraint firstItem="hIy-56-rKT" firstAttribute="centerX" secondItem="cN6-5H-iDO" secondAttribute="centerX" id="EbX-C3-Wry"/>
+                            <constraint firstItem="xTA-2Z-ONj" firstAttribute="leading" secondItem="HId-a7-dMl" secondAttribute="leading" id="V3X-gs-Xy5"/>
+                            <constraint firstItem="xTA-2Z-ONj" firstAttribute="trailing" secondItem="HId-a7-dMl" secondAttribute="trailing" id="VQf-Vh-J8E"/>
+                            <constraint firstItem="xTA-2Z-ONj" firstAttribute="top" secondItem="MpJ-V0-Lmz" secondAttribute="bottom" constant="86" id="ZIm-SD-cl4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xTA-2Z-ONj" secondAttribute="trailing" constant="-37" id="aFI-0G-U4C"/>
+                            <constraint firstItem="HId-a7-dMl" firstAttribute="top" secondItem="xTA-2Z-ONj" secondAttribute="bottom" constant="15" id="dRT-wE-gcr"/>
+                            <constraint firstItem="hIy-56-rKT" firstAttribute="centerY" secondItem="cN6-5H-iDO" secondAttribute="centerY" id="nrW-JY-syv"/>
+                            <constraint firstItem="hIy-56-rKT" firstAttribute="trailing" secondItem="NOo-8d-4Fm" secondAttribute="trailing" id="qCz-oO-RDa"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="classNameLabel" destination="HId-a7-dMl" id="A9Y-0a-d6b"/>
                         <outlet property="locationEnableButton" destination="NOo-8d-4Fm" id="dsS-ki-ave"/>
+                        <outlet property="teacherNameLabel" destination="xTA-2Z-ONj" id="Gz9-6t-cDU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dAO-xL-mSL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -249,6 +284,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="first" width="30" height="30"/>
         <image name="map" width="24" height="24"/>
     </resources>
 </document>
