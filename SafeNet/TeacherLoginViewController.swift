@@ -29,7 +29,6 @@ class TeacherLoginViewController: UIViewController {
             
             let value = snapshot.value as? NSDictionary
             let email = self.emailTextField.text!.substring(to: self.emailTextField.text!.characters.count - 4)
-            print(value?[email])
             
             if (value?["\(email)"]) == nil {
                 print("Teacher Account Not Found.")
