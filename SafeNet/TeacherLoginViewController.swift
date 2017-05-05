@@ -52,7 +52,7 @@ class TeacherLoginViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showMain" {
             let nextVC = segue.destination as! CheckLoginViewController
-            nextVC.previousVC = "Teacher"
+            nextVC.previousVC = "teacher"
         }
     }
 }

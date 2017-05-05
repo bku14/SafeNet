@@ -10,6 +10,7 @@ import UIKit
 import CoreLocation
 import MapKit
 import FirebaseDatabase
+import FirebaseAuth
 
 class StudentMainViewController: UIViewController {
     
@@ -17,6 +18,7 @@ class StudentMainViewController: UIViewController {
     @IBOutlet weak var classNameLabel: UILabel!
     @IBOutlet weak var locationEnableButton: UIButton!
     
+    var count = 0
     var className: String!
     var teacherName: String!
     var locationEnable = false;
@@ -55,18 +57,26 @@ class StudentMainViewController: UIViewController {
 
 extension StudentMainViewController: CLLocationManagerDelegate {
     
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let mostRecentLocation = locations.last else {
             return
         }
         
-        // Add another annotation to the map.
-        let annotation = MKPointAnnotation()
-        annotation.coordinate = mostRecentLocation.coordinate
         
-        // Also add to our map so we can remove old values later
-        self.locations.append(annotation)
-        print("Location: ", mostRecentLocation)
+        if FIRAuth.auth()?.currentUser != nil {
+            let user = FIRAuth.auth()?.currentUser
+            let refRecord = FIRDatabase.database().reference().child("/classes/\(user!.displayName!)/students/\(user!.uid)/location/")
+            let refUpdate = FIRDatabase.database().reference().child("/classes/\(user!.displayName!)/updates/")
+            refRecord.updateChildValues(["\(count)" : "\(mostRecentLocation)"])
+            refUpdate.updateChildValues(["\(user!.uid)" : "\(mostRecentLocation)"])
+        }
+        
+//        print("fadfa" , count)
+//        print("fdsafas \(locations)")
+//        print("Location: ", mostRecentLocation)
+        
+        count += 1
         
         // Remove values if the array is too big
         while locations.count > 100 {
@@ -75,6 +85,13 @@ extension StudentMainViewController: CLLocationManagerDelegate {
         
         if UIApplication.shared.applicationState == .active {
         } else {
+            if FIRAuth.auth()?.currentUser != nil {
+                let user = FIRAuth.auth()?.currentUser
+                let refRecord = FIRDatabase.database().reference().child("/classes/\(user!.displayName!)/students/\(user!.uid)/location/")
+                let refUpdate = FIRDatabase.database().reference().child("/classes/\(user!.displayName!)/updates/")
+                refRecord.updateChildValues(["\(count)" : "\(mostRecentLocation)"])
+                refUpdate.updateChildValues(["\(user!.uid)" : "\(mostRecentLocation)"])
+            }
             print("App is backgrounded. New location is %@", mostRecentLocation)
         }
     }

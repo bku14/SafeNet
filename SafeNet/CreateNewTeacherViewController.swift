@@ -48,7 +48,6 @@ class CreateNewTeacherViewController: UIViewController {
                         let changeRequest = FIRAuth.auth()?.currentUser?.profileChangeRequest()
                         changeRequest?.displayName = name
                         changeRequest?.commitChanges() { (error) in }
-                        print(name)
                         
                         self.performSegue(withIdentifier: "showMain", sender: nil)
                     }

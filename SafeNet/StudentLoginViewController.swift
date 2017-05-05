@@ -71,6 +71,11 @@ class StudentLoginViewController: UIViewController {
                             } else {
                                 
                                 self.ref.child("classes/\(self.teacherCodeTextField.text!)/students/\(user!.uid)/name/").setValue(self.usernameTextField.text!)
+                                
+                                let changeRequest = FIRAuth.auth()?.currentUser?.profileChangeRequest()
+                                changeRequest?.displayName = self.teacherCodeTextField.text!
+                                changeRequest?.commitChanges() { (error) in }
+                                
                                 self.performSegue(withIdentifier: "showMain", sender: nil)
                                 
                             }
@@ -86,7 +91,7 @@ class StudentLoginViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showMain" {
             let nextVC = segue.destination as! CheckLoginViewController
-            nextVC.previousVC  = "Student"
+            nextVC.previousVC  = "student"
             nextVC.teacherName = self.teacherName
             nextVC.className   = self.className
         }
