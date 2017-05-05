@@ -235,7 +235,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Username" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3vQ-ya-7sb">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Name:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3vQ-ya-7sb">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="nCi-4u-27X"/>

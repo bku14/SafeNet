@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SafeNet/CreateNewTeacherViewController.swift"
-            timestampString = "515670752.581454"
+            timestampString = "515679666.640279"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "login(_:)"
             landmarkType = "7">
          </BreakpointContent>

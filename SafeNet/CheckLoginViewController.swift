@@ -20,7 +20,8 @@ class CheckLoginViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        checkUser()
+//        checkUser()
+        self.performSegue(withIdentifier: "login", sender: nil)
     }
     
     func checkUser() {
@@ -36,18 +37,12 @@ class CheckLoginViewController: UIViewController {
                     let value = snapshot.value as? NSDictionary
                     let email = user.email?.substring(to: (user.email?.characters.count)! - 4)
                     
-                    if (value?["\(email!)"]) == nil {
-                        self.previousVC = "Student"
-                    } else {
-                        self.previousVC = "Teacher"
-                    }
+                    self.previousVC = (value?["\(email!)"]) == nil ? "student" : "teacher"
                     
-                    if FIRAuth.auth()?.currentUser != nil && self.previousVC == "Teacher" {
+                    if FIRAuth.auth()?.currentUser != nil && self.previousVC == "teacher" {
                         self.performSegue(withIdentifier: "teacherMain", sender: nil)
-                    } else if FIRAuth.auth()?.currentUser != nil && self.previousVC == "Student" {
+                    } else if FIRAuth.auth()?.currentUser != nil && self.previousVC == "student" {
                         self.performSegue(withIdentifier: "studentMain", sender: nil)
-                    } else {
-                        self.performSegue(withIdentifier: "login", sender: nil)
                     }
                     
                 }) { (error) in
@@ -56,6 +51,8 @@ class CheckLoginViewController: UIViewController {
                 
                 
             }
+        } else {
+            self.performSegue(withIdentifier: "login", sender: nil)
         }
     }
 }

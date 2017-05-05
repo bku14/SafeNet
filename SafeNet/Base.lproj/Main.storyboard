@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Classes-->
+        <!--Class-->
         <scene sceneID="VBU-KO-7Dt">
             <objects>
                 <tableViewController id="uZy-4d-R17" customClass="ClassesTableViewController" customModule="SafeNet" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eBe-Fa-3Mn" id="0V1-b4-CO6">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -30,7 +30,7 @@
                             <outlet property="delegate" destination="uZy-4d-R17" id="2CH-wL-Be4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Classes" id="XgJ-QF-Jdf">
+                    <navigationItem key="navigationItem" title="Class" id="XgJ-QF-Jdf">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="Kdx-pF-apt">
                             <connections>
                                 <segue destination="ndD-lN-izC" kind="show" id="yOG-gT-onh"/>
@@ -59,10 +59,10 @@
             </objects>
             <point key="canvasLocation" x="678" y="-1028"/>
         </scene>
-        <!--View Controller-->
+        <!--Add New Class View Controller-->
         <scene sceneID="r0x-E7-MlM">
             <objects>
-                <viewController id="ndD-lN-izC" sceneMemberID="viewController">
+                <viewController id="ndD-lN-izC" customClass="AddNewClassViewController" customModule="SafeNet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ch3-hg-jC6"/>
                         <viewControllerLayoutGuide type="bottom" id="k23-cV-Xs8"/>
@@ -70,12 +70,66 @@
                     <view key="view" contentMode="scaleToFill" id="fms-db-lnG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XnU-Pa-iqP">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KNK-Ni-Qxg">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class Code:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kh1-cY-xJE">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="Ta9-9X-JsB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ve-f6-dZb">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="112" id="B5h-Wz-jjZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5k-7S-wVX">
+                                <state key="normal" title="Create">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="createWithSender:" destination="ndD-lN-izC" eventType="touchUpInside" id="T3W-uz-BjK"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="XnU-Pa-iqP" secondAttribute="trailing" constant="64" id="1r8-qz-YjK"/>
+                            <constraint firstItem="9Ve-f6-dZb" firstAttribute="leading" secondItem="XnU-Pa-iqP" secondAttribute="leading" id="2d1-Nw-4OG"/>
+                            <constraint firstItem="XnU-Pa-iqP" firstAttribute="trailing" secondItem="KNK-Ni-Qxg" secondAttribute="trailing" id="9LZ-vI-86X"/>
+                            <constraint firstItem="XnU-Pa-iqP" firstAttribute="top" secondItem="9Ve-f6-dZb" secondAttribute="bottom" constant="8" symbolic="YES" id="DC5-sK-KsE"/>
+                            <constraint firstItem="KNK-Ni-Qxg" firstAttribute="centerX" secondItem="a5k-7S-wVX" secondAttribute="centerX" id="IkD-42-GJX"/>
+                            <constraint firstItem="kh1-cY-xJE" firstAttribute="leading" secondItem="KNK-Ni-Qxg" secondAttribute="leading" id="UrT-Sa-C71"/>
+                            <constraint firstItem="a5k-7S-wVX" firstAttribute="top" secondItem="KNK-Ni-Qxg" secondAttribute="bottom" constant="59" id="eLT-KV-7EG"/>
+                            <constraint firstItem="KNK-Ni-Qxg" firstAttribute="top" secondItem="kh1-cY-xJE" secondAttribute="bottom" constant="8" symbolic="YES" id="rMq-iz-NPa"/>
+                            <constraint firstItem="k23-cV-Xs8" firstAttribute="top" secondItem="a5k-7S-wVX" secondAttribute="bottom" constant="95" id="sYx-IF-rhL"/>
+                            <constraint firstItem="kh1-cY-xJE" firstAttribute="top" secondItem="XnU-Pa-iqP" secondAttribute="bottom" constant="67" id="wF4-bq-CzH"/>
+                            <constraint firstItem="XnU-Pa-iqP" firstAttribute="leading" secondItem="kh1-cY-xJE" secondAttribute="leading" id="yKt-LI-gPe"/>
+                            <constraint firstItem="9Ve-f6-dZb" firstAttribute="leading" secondItem="fms-db-lnG" secondAttribute="leadingMargin" constant="80" id="zRj-U4-D2g"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="classCodeTextField" destination="KNK-Ni-Qxg" id="qje-Eq-KXh"/>
+                        <outlet property="classNameTextField" destination="XnU-Pa-iqP" id="Oe6-Vq-s9P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f6c-TO-iQc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2281" y="-1029"/>
+            <point key="canvasLocation" x="2280.8000000000002" y="-1029.5352323838081"/>
         </scene>
         <!--Map-->
         <scene sceneID="wg7-f3-ORb">

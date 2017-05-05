@@ -1,5 +1,5 @@
 //
-//  ClassesViewController.swift
+//  ClassesTableViewController.swift
 //  SafeNet
 //
 //  Created by Bryan Ku on 5/5/17.
@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class ClassesTableViewController: UITableViewController {
     

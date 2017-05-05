@@ -28,6 +28,7 @@
 		34D13DB71E975686001B8840 /* SafeNetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D13DB61E975686001B8840 /* SafeNetUITests.swift */; };
 		34EBDB3A1EBC79B1001D4324 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EBDB391EBC79B1001D4324 /* MapViewController.swift */; };
 		34EBDB421EBC9470001D4324 /* ClassesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EBDB411EBC9470001D4324 /* ClassesTableViewController.swift */; };
+		34EBDB441EBC9FCE001D4324 /* AddNewClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EBDB431EBC9FCE001D4324 /* AddNewClassViewController.swift */; };
 		BFAF50FDED519CDDFE90189F /* Pods_SafeNetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23267F615B8512F0B47A6F99 /* Pods_SafeNetTests.framework */; };
 		C09FF9EEA1C2B459A7C834F5 /* Pods_SafeNetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003EAC110E5F67403059C337 /* Pods_SafeNetUITests.framework */; };
 /* End PBXBuildFile section */
@@ -78,6 +79,7 @@
 		34D13DB81E975686001B8840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34EBDB391EBC79B1001D4324 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		34EBDB411EBC9470001D4324 /* ClassesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassesTableViewController.swift; sourceTree = "<group>"; };
+		34EBDB431EBC9FCE001D4324 /* AddNewClassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewClassViewController.swift; sourceTree = "<group>"; };
 		47F6667E488436FC0DCAABE8 /* Pods-SafeNetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafeNetTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SafeNetTests/Pods-SafeNetTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D984788E346544D28CA5970 /* Pods-SafeNetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafeNetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SafeNetTests/Pods-SafeNetTests.release.xcconfig"; sourceTree = "<group>"; };
 		71A44AFB681E6CF38D5FB097 /* Pods_SafeNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafeNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +149,7 @@
 				346D7AB71E9767D3002CD997 /* CheckLoginViewController.swift */,
 				346D7AB91EA58B14002CD997 /* WelcomeScreenViewController.swift */,
 				34EBDB411EBC9470001D4324 /* ClassesTableViewController.swift */,
+				34EBDB431EBC9FCE001D4324 /* AddNewClassViewController.swift */,
 				346D7ABD1EA5909B002CD997 /* TeacherLoginViewController.swift */,
 				346D7AC31EA6DBFA002CD997 /* StudentLoginViewController.swift */,
 				346D7AC81EA6E4F0002CD997 /* CreateNewTeacherViewController.swift */,
@@ -505,6 +508,7 @@
 				34D13D951E975686001B8840 /* AppDelegate.swift in Sources */,
 				346D7AC41EA6DBFA002CD997 /* StudentLoginViewController.swift in Sources */,
 				346D7ABA1EA58B14002CD997 /* WelcomeScreenViewController.swift in Sources */,
+				34EBDB441EBC9FCE001D4324 /* AddNewClassViewController.swift in Sources */,
 				346D7AB81E9767D3002CD997 /* CheckLoginViewController.swift in Sources */,
 				346D7AC21EA59FA7002CD997 /* Extensions.swift in Sources */,
 				346D7AC91EA6E4F0002CD997 /* CreateNewTeacherViewController.swift in Sources */,

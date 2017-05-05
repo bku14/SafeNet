@@ -38,11 +38,18 @@ class CreateNewTeacherViewController: UIViewController {
                 
                 self.ref.child("teachers/\(email)").setValue(["name" : "\(name)"])
                 
+                
+                
                 FIRAuth.auth()?.signIn(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!) { (user, error) in
                     if error != nil {
                         print("Wrong Password")
                     } else {
-                        print("Login Successfully :)")
+                        
+                        let changeRequest = FIRAuth.auth()?.currentUser?.profileChangeRequest()
+                        changeRequest?.displayName = name
+                        changeRequest?.commitChanges() { (error) in }
+                        print(name)
+                        
                         self.performSegue(withIdentifier: "showMain", sender: nil)
                     }
                 }
