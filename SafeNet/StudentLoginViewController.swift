@@ -29,21 +29,23 @@ class StudentLoginViewController: UIViewController {
         let password = ("p-\(teacherCodeTextField.text!)")
             
         FIRAuth.auth()?.createUser(withEmail: email, password: password) { (user, error) in
-            if let errCode = FIRAuthErrorCode(rawValue: error!._code) {
-                
-                switch errCode {
-                    case .errorCodeEmailAlreadyInUse:
-                        FIRAuth.auth()?.signIn(withEmail: email, password: password) { (user, error) in
-                            if error != nil {
-                                print("Wrong Password ")
+            if error != nil {
+                if let errCode = FIRAuthErrorCode(rawValue: error!._code) {
+                    
+                    switch errCode {
+                        case .errorCodeEmailAlreadyInUse:
+                            FIRAuth.auth()?.signIn(withEmail: email, password: password) { (user, error) in
+                                if error != nil {
+                                    print("Wrong Password ")
+                                }
+                                else {
+                                    print("Login Successfully :)")
+                                    self.performSegue(withIdentifier: "showMain", sender: nil)
+                                }
                             }
-                            else {
-                                print("Login Successfully :)")
-                                self.performSegue(withIdentifier: "showMain", sender: nil)
-                            }
-                        }
-                    default:
-                        print("Create User Error: \(error)")
+                        default:
+                            print("Create User Error: \(error)")
+                    }
                 }
             } else {
                 FIRAuth.auth()?.signIn(withEmail: email, password: password) { (user, error) in

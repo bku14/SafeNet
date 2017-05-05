@@ -2,13 +2,13 @@
 //  ClassesViewController.swift
 //  SafeNet
 //
-//  Created by rrao on 5/5/17.
+//  Created by Bryan Ku on 5/5/17.
 //  Copyright © 2017 SafeNet. All rights reserved.
 //
 
 import UIKit
 
-class ClassesViewController: UIViewController {
+class ClassesViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

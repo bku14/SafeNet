@@ -2,7 +2,7 @@
 //  StudentMainViewController.swift
 //  SafeNet
 //
-//  Created by rrao on 5/5/17.
+//  Created by Bryan Ku on 5/5/17.
 //  Copyright © 2017 SafeNet. All rights reserved.
 //
 
@@ -12,6 +12,9 @@ import MapKit
 
 class StudentMainViewController: UIViewController {
     
+    @IBOutlet weak var locationEnableButton: UIButton!
+    
+    var locationEnable = false;
     fileprivate var locations = [MKPointAnnotation]()
     private lazy var locationManager: CLLocationManager = {
         let manager = CLLocationManager()
@@ -22,8 +25,19 @@ class StudentMainViewController: UIViewController {
     }()
     
     override func viewDidLoad() {
-        locationManager.startUpdatingLocation()
         super.viewDidLoad()
+    }
+    
+    @IBAction func locationDataEnable(_ sender: AnyObject) {
+        if locationEnable {
+            locationManager.stopUpdatingLocation()
+            locationEnableButton.setTitle("Enable Location Data", for: .normal)
+            locationEnable = false
+        } else {
+            locationManager.startUpdatingLocation()
+            locationEnableButton.setTitle("Disable Location Data", for: .normal)
+            locationEnable = true
+        }
     }
 
 }
