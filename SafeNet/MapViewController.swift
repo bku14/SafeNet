@@ -16,13 +16,6 @@ class MapViewController: UIViewController {
     
     fileprivate var locations = [MKPointAnnotation]()
     
-    private lazy var locationManager: CLLocationManager = {
-        let manager = CLLocationManager()
-        manager.desiredAccuracy = kCLLocationAccuracyBest
-        manager.delegate = self
-        manager.requestAlwaysAuthorization()
-        return manager
-    }()
     
     var ref = FIRDatabase.database().reference().child("/classes/0001/updates")
     
@@ -44,41 +37,26 @@ class MapViewController: UIViewController {
         ref.observe(.value, with: { snapshot in
             for child in snapshot.children.allObjects as! [FIRDataSnapshot] {
                 print(child.key)
-                print(child.value!)
+                var a = "\(child.value!)"
+                a = a.characters.split{$0 == " "}.map(String.init)[0]
+                let length = a.characters.count - 1
+                a = a.substring(to: length)
+                a = a.substring(from: 1)
+                let a1 = a.characters.split{$0 == ","}.map(String.init)[0]
+                let a2 = a.characters.split{$0 == ","}.map(String.init)[1]
+                let latitude: CLLocationDegrees = Double(a1)!
+                let longitude: CLLocationDegrees = Double(a2)!
+                let newLocation = CLLocation(latitude: latitude, longitude: longitude)
+                
+
+                
+                let annotation = MKPointAnnotation()
+                annotation.coordinate = newLocation.coordinate
+                
+                self.locations.append(annotation)
+                self.mapView.showAnnotations(self.locations, animated: true)
                 
             }
         })
     }
-}
-
-extension MapViewController: CLLocationManagerDelegate {
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let mostRecentLocation = locations.last else {
-            return
-        }
-        
-        // Add another annotation to the map.
-        let annotation = MKPointAnnotation()
-        annotation.coordinate = mostRecentLocation.coordinate
-        
-        // Also add to our map so we can remove old values later
-        self.locations.append(annotation)
-        
-        // Remove values if the array is too big
-        while locations.count > 100 {
-            let annotationToRemove = self.locations.first!
-            self.locations.remove(at: 0)
-            
-            // Also remove from the map
-            mapView.removeAnnotation(annotationToRemove)
-        }
-        
-        if UIApplication.shared.applicationState == .active {
-            mapView.showAnnotations(self.locations, animated: true)
-        } else {
-            print("App is backgrounded. New location is %@", mostRecentLocation)
-        }
-    }
-    
 }

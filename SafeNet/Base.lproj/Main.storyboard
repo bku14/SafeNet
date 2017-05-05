@@ -131,7 +131,7 @@
             </objects>
             <point key="canvasLocation" x="2280.8000000000002" y="-1029.5352323838081"/>
         </scene>
-        <!--Map-->
+        <!--Map View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="MapViewController" customModule="SafeNet" customModuleProvider="target" sceneMemberID="viewController">
@@ -143,21 +143,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LTr-0J-4E3">
-                                <frame key="frameInset" width="375" height="618"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="LTr-0J-4E3"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="4BI-nU-AlW">
+                                <segments>
+                                    <segment title="Nav"/>
+                                    <segment title="Best"/>
+                                    <segment title="10 m"/>
+                                    <segment title="100 m"/>
+                                    <segment title="1 km"/>
+                                    <segment title="3 km"/>
+                                </segments>
+                                <connections>
+                                    <action selector="accuracyChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="3Dl-UU-zt8"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="LTr-0J-4E3" secondAttribute="trailing" id="HvC-BT-sjb"/>
+                            <constraint firstItem="LTr-0J-4E3" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="X6X-fv-AyV"/>
+                            <constraint firstItem="LTr-0J-4E3" firstAttribute="bottom" secondItem="Djb-ko-YwX" secondAttribute="top" id="ZhX-4Q-Z0d"/>
+                            <constraint firstItem="LTr-0J-4E3" firstAttribute="centerX" secondItem="4BI-nU-AlW" secondAttribute="centerX" id="bmk-kF-JVT"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="4BI-nU-AlW" secondAttribute="bottom" constant="32" id="c4j-pu-7Lg"/>
+                            <constraint firstItem="LTr-0J-4E3" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="iD4-GR-OZa"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="map" id="cPa-gy-q4n"/>
+                    <navigationItem key="navigationItem" id="A5u-0s-2ur">
+                        <barButtonItem key="leftBarButtonItem" image="CurrentLocation" id="DuU-gn-uw4"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="1bG-Yp-V0o"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="LTr-0J-4E3" id="cNv-vV-pcx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="677.60000000000002" y="-354.87256371814095"/>
+            <point key="canvasLocation" x="1480.8" y="-332.38380809595208"/>
         </scene>
         <!--Student Main View Controller-->
         <scene sceneID="ZI4-Cf-fZe">
@@ -275,15 +296,35 @@
                     </tabBar>
                     <connections>
                         <segue destination="fxh-Hg-jcB" kind="relationship" relationship="viewControllers" id="Hyd-BC-tDa"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="ZJI-uP-YEG" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-108" y="-510"/>
         </scene>
+        <!--Map-->
+        <scene sceneID="WFK-GQ-83t">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZJI-uP-YEG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" image="map" id="cPa-gy-q4n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fms-TJ-nH6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="z4z-su-Uec"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qJw-DP-Kee" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="678" y="-332"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="CurrentLocation" width="15" height="15"/>
         <image name="first" width="30" height="30"/>
         <image name="map" width="24" height="24"/>
     </resources>
