@@ -1,0 +1,712 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "StudentMainViewController"
+provides-nominal:
+- "C7SafeNet25StudentMainViewController"
+provides-member:
+- ["C7SafeNet25StudentMainViewController", ""]
+provides-dynamic-lookup:
+- "locationManager"
+- "viewDidLoad"
+depends-top-level:
+- "StudentMainViewController"
+- !private "kCLLocationAccuracyBest"
+- "CLLocationManagerDelegate"
+- "CLLocationManager"
+- !private "print"
+- "UIViewController"
+- "AssignmentPrecedence"
+- !private "UIApplication"
+- !private "=="
+- "MKPointAnnotation"
+- "CLLocation"
+- !private "StringLiteralType"
+depends-member:
+- !private ["Ps9AnyObject", "CLLocationManager"]
+- ["Ps9AnyObject", "MKPointAnnotation"]
+- !private ["Ps9AnyObject", "UIApplication"]
+- !private ["Ps9AnyObject", "applicationState"]
+- !private ["Ps9AnyObject", "coordinate"]
+- !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "desiredAccuracy"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "kCLLocationAccuracyBest"]
+- ["Ps9AnyObject", "locationManager"]
+- ["Ps9AnyObject", "locationManager.storage"]
+- ["Ps9AnyObject", "locationManagerDidPauseLocationUpdates"]
+- ["Ps9AnyObject", "locationManagerDidResumeLocationUpdates"]
+- ["Ps9AnyObject", "locationManagerShouldDisplayHeadingCalibration"]
+- ["Ps9AnyObject", "locations"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "requestAlwaysAuthorization"]
+- !private ["Ps9AnyObject", "shared"]
+- !private ["Ps9AnyObject", "startUpdatingLocation"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Iterator"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- ["Sa", "deinit"]
+- ["Sa", "init"]
+- !private ["Sa", "last"]
+- !private ["Ps23BidirectionalCollection", "Iterator"]
+- !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps23BidirectionalCollection", "append"]
+- ["Ps23BidirectionalCollection", "init"]
+- !private ["Ps23BidirectionalCollection", "last"]
+- !private ["Ps22BidirectionalIndexable", "Iterator"]
+- !private ["Ps22BidirectionalIndexable", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "append"]
+- ["Ps22BidirectionalIndexable", "init"]
+- !private ["Ps22BidirectionalIndexable", "last"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["CSo10CLLocation", "coordinate"]
+- ["CSo10CLLocation", "deinit"]
+- ["VSC22CLLocationCoordinate2D", "deinit"]
+- !private ["CSo17CLLocationManager", "deinit"]
+- !private ["CSo17CLLocationManager", "delegate"]
+- !private ["CSo17CLLocationManager", "desiredAccuracy"]
+- !private ["CSo17CLLocationManager", "init"]
+- !private ["CSo17CLLocationManager", "requestAlwaysAuthorization"]
+- !private ["CSo17CLLocationManager", "startUpdatingLocation"]
+- !private ["PSo25CLLocationManagerDelegate", "CLLocationManager"]
+- ["PSo25CLLocationManagerDelegate", "MKPointAnnotation"]
+- !private ["PSo25CLLocationManagerDelegate", "UIApplication"]
+- !private ["PSo25CLLocationManagerDelegate", "kCLLocationAccuracyBest"]
+- ["PSo25CLLocationManagerDelegate", "locationManager"]
+- ["PSo25CLLocationManagerDelegate", "locationManagerDidPauseLocationUpdates"]
+- ["PSo25CLLocationManagerDelegate", "locationManagerDidResumeLocationUpdates"]
+- ["PSo25CLLocationManagerDelegate", "locationManagerShouldDisplayHeadingCalibration"]
+- !private ["PSo25CLLocationManagerDelegate", "locations"]
+- !private ["PSo25CLLocationManagerDelegate", "print"]
+- ["PSo25CLLocationManagerDelegate", ""]
+- !private ["Ps7CVarArg", "CLLocationManager"]
+- !private ["Ps7CVarArg", "Iterator"]
+- ["Ps7CVarArg", "MKPointAnnotation"]
+- !private ["Ps7CVarArg", "UIApplication"]
+- !private ["Ps7CVarArg", "_Element"]
+- !private ["Ps7CVarArg", "append"]
+- !private ["Ps7CVarArg", "applicationState"]
+- !private ["Ps7CVarArg", "coordinate"]
+- !private ["Ps7CVarArg", "delegate"]
+- !private ["Ps7CVarArg", "desiredAccuracy"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "kCLLocationAccuracyBest"]
+- !private ["Ps7CVarArg", "last"]
+- ["Ps7CVarArg", "locationManager"]
+- ["Ps7CVarArg", "locationManager.storage"]
+- ["Ps7CVarArg", "locationManagerDidPauseLocationUpdates"]
+- ["Ps7CVarArg", "locationManagerDidResumeLocationUpdates"]
+- ["Ps7CVarArg", "locationManagerShouldDisplayHeadingCalibration"]
+- ["Ps7CVarArg", "locations"]
+- !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "requestAlwaysAuthorization"]
+- !private ["Ps7CVarArg", "shared"]
+- !private ["Ps7CVarArg", "startUpdatingLocation"]
+- ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "append"]
+- ["Ps10Collection", "init"]
+- !private ["Ps10Collection", "last"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "CLLocationManager"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- ["Ps28CustomDebugStringConvertible", "MKPointAnnotation"]
+- !private ["Ps28CustomDebugStringConvertible", "UIApplication"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "applicationState"]
+- !private ["Ps28CustomDebugStringConvertible", "coordinate"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "desiredAccuracy"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "kCLLocationAccuracyBest"]
+- !private ["Ps28CustomDebugStringConvertible", "last"]
+- ["Ps28CustomDebugStringConvertible", "locationManager"]
+- ["Ps28CustomDebugStringConvertible", "locationManager.storage"]
+- ["Ps28CustomDebugStringConvertible", "locationManagerDidPauseLocationUpdates"]
+- ["Ps28CustomDebugStringConvertible", "locationManagerDidResumeLocationUpdates"]
+- ["Ps28CustomDebugStringConvertible", "locationManagerShouldDisplayHeadingCalibration"]
+- ["Ps28CustomDebugStringConvertible", "locations"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "requestAlwaysAuthorization"]
+- !private ["Ps28CustomDebugStringConvertible", "shared"]
+- ["Ps28CustomDebugStringConvertible", "some"]
+- !private ["Ps28CustomDebugStringConvertible", "startUpdatingLocation"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "_Element"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "append"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "last"]
+- ["Ps17CustomReflectable", "some"]
+- !private ["Ps23CustomStringConvertible", "CLLocationManager"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
+- ["Ps23CustomStringConvertible", "MKPointAnnotation"]
+- !private ["Ps23CustomStringConvertible", "UIApplication"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "applicationState"]
+- !private ["Ps23CustomStringConvertible", "coordinate"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "desiredAccuracy"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "kCLLocationAccuracyBest"]
+- !private ["Ps23CustomStringConvertible", "last"]
+- ["Ps23CustomStringConvertible", "locationManager"]
+- ["Ps23CustomStringConvertible", "locationManager.storage"]
+- ["Ps23CustomStringConvertible", "locationManagerDidPauseLocationUpdates"]
+- ["Ps23CustomStringConvertible", "locationManagerDidResumeLocationUpdates"]
+- ["Ps23CustomStringConvertible", "locationManagerShouldDisplayHeadingCalibration"]
+- ["Ps23CustomStringConvertible", "locations"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "requestAlwaysAuthorization"]
+- !private ["Ps23CustomStringConvertible", "shared"]
+- !private ["Ps23CustomStringConvertible", "startUpdatingLocation"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "CLLocationManager"]
+- ["Ps9Equatable", "MKPointAnnotation"]
+- !private ["Ps9Equatable", "RawValue"]
+- !private ["Ps9Equatable", "UIApplication"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "active"]
+- !private ["Ps9Equatable", "applicationState"]
+- !private ["Ps9Equatable", "coordinate"]
+- !private ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "desiredAccuracy"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "kCLLocationAccuracyBest"]
+- ["Ps9Equatable", "locationManager"]
+- ["Ps9Equatable", "locationManager.storage"]
+- ["Ps9Equatable", "locationManagerDidPauseLocationUpdates"]
+- ["Ps9Equatable", "locationManagerDidResumeLocationUpdates"]
+- ["Ps9Equatable", "locationManagerShouldDisplayHeadingCalibration"]
+- ["Ps9Equatable", "locations"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "requestAlwaysAuthorization"]
+- !private ["Ps9Equatable", "shared"]
+- !private ["Ps9Equatable", "startUpdatingLocation"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
+- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
+- !private ["Ps25ExpressibleByArrayLiteral", "append"]
+- ["Ps25ExpressibleByArrayLiteral", "init"]
+- !private ["Ps25ExpressibleByArrayLiteral", "last"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps23ExpressibleByNilLiteral", "some"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "CLLocationManager"]
+- ["Ps8Hashable", "MKPointAnnotation"]
+- !private ["Ps8Hashable", "RawValue"]
+- !private ["Ps8Hashable", "UIApplication"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "active"]
+- !private ["Ps8Hashable", "applicationState"]
+- !private ["Ps8Hashable", "coordinate"]
+- !private ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "desiredAccuracy"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "kCLLocationAccuracyBest"]
+- ["Ps8Hashable", "locationManager"]
+- ["Ps8Hashable", "locationManager.storage"]
+- ["Ps8Hashable", "locationManagerDidPauseLocationUpdates"]
+- ["Ps8Hashable", "locationManagerDidResumeLocationUpdates"]
+- ["Ps8Hashable", "locationManagerShouldDisplayHeadingCalibration"]
+- ["Ps8Hashable", "locations"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "requestAlwaysAuthorization"]
+- !private ["Ps8Hashable", "shared"]
+- !private ["Ps8Hashable", "startUpdatingLocation"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "append"]
+- ["Ps9Indexable", "init"]
+- !private ["Ps9Indexable", "last"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "append"]
+- ["Ps13IndexableBase", "init"]
+- !private ["Ps13IndexableBase", "last"]
+- !private ["Vs16IndexingIterator", "Element"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["PSo12MKAnnotation", "coordinate"]
+- !private ["PSo12MKAnnotation", "init"]
+- !private ["CSo17MKPointAnnotation", "coordinate"]
+- ["CSo17MKPointAnnotation", "deinit"]
+- !private ["CSo17MKPointAnnotation", "init"]
+- !private ["CSo7MKShape", "coordinate"]
+- !private ["CSo7MKShape", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "Iterator"]
+- !private ["Ps17MutableCollection", "_Element"]
+- !private ["Ps17MutableCollection", "append"]
+- ["Ps17MutableCollection", "init"]
+- !private ["Ps17MutableCollection", "last"]
+- !private ["Ps16MutableIndexable", "Iterator"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "append"]
+- ["Ps16MutableIndexable", "init"]
+- !private ["Ps16MutableIndexable", "last"]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "CLLocationManager"]
+- ["PSo8NSCoding", "MKPointAnnotation"]
+- !private ["PSo8NSCoding", "UIApplication"]
+- !private ["PSo8NSCoding", "coordinate"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "kCLLocationAccuracyBest"]
+- ["PSo8NSCoding", "locationManager"]
+- ["PSo8NSCoding", "locationManager.storage"]
+- ["PSo8NSCoding", "locationManagerDidPauseLocationUpdates"]
+- ["PSo8NSCoding", "locationManagerDidResumeLocationUpdates"]
+- ["PSo8NSCoding", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSo8NSCoding", "locations"]
+- !private ["PSo8NSCoding", "print"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "coordinate"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "CLLocationManager"]
+- ["PSo26NSExtensionRequestHandling", "MKPointAnnotation"]
+- !private ["PSo26NSExtensionRequestHandling", "UIApplication"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "kCLLocationAccuracyBest"]
+- ["PSo26NSExtensionRequestHandling", "locationManager"]
+- ["PSo26NSExtensionRequestHandling", "locationManager.storage"]
+- ["PSo26NSExtensionRequestHandling", "locationManagerDidPauseLocationUpdates"]
+- ["PSo26NSExtensionRequestHandling", "locationManagerDidResumeLocationUpdates"]
+- ["PSo26NSExtensionRequestHandling", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSo26NSExtensionRequestHandling", "locations"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "CLLocation"]
+- ["CSo8NSObject", "CLLocationManager"]
+- ["CSo8NSObject", "MKPointAnnotation"]
+- !private ["CSo8NSObject", "UIApplication"]
+- !private ["CSo8NSObject", "applicationState"]
+- !private ["CSo8NSObject", "coordinate"]
+- !private ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "desiredAccuracy"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "kCLLocationAccuracyBest"]
+- ["CSo8NSObject", "locationManager"]
+- ["CSo8NSObject", "locationManager.storage"]
+- ["CSo8NSObject", "locationManagerDidPauseLocationUpdates"]
+- ["CSo8NSObject", "locationManagerDidResumeLocationUpdates"]
+- ["CSo8NSObject", "locationManagerShouldDisplayHeadingCalibration"]
+- ["CSo8NSObject", "locations"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "requestAlwaysAuthorization"]
+- !private ["CSo8NSObject", "shared"]
+- !private ["CSo8NSObject", "startUpdatingLocation"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "CLLocationManager"]
+- ["PSo16NSObjectProtocol", "MKPointAnnotation"]
+- !private ["PSo16NSObjectProtocol", "UIApplication"]
+- !private ["PSo16NSObjectProtocol", "applicationState"]
+- !private ["PSo16NSObjectProtocol", "coordinate"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "desiredAccuracy"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "kCLLocationAccuracyBest"]
+- ["PSo16NSObjectProtocol", "locationManager"]
+- ["PSo16NSObjectProtocol", "locationManager.storage"]
+- ["PSo16NSObjectProtocol", "locationManagerDidPauseLocationUpdates"]
+- ["PSo16NSObjectProtocol", "locationManagerDidResumeLocationUpdates"]
+- ["PSo16NSObjectProtocol", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSo16NSObjectProtocol", "locations"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "requestAlwaysAuthorization"]
+- !private ["PSo16NSObjectProtocol", "shared"]
+- !private ["PSo16NSObjectProtocol", "startUpdatingLocation"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "coordinate"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- ["Sq", "deinit"]
+- ["Sq", "some"]
+- !private ["Ps22RandomAccessCollection", "Iterator"]
+- !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps22RandomAccessCollection", "append"]
+- ["Ps22RandomAccessCollection", "init"]
+- !private ["Ps22RandomAccessCollection", "last"]
+- !private ["Ps21RandomAccessIndexable", "Iterator"]
+- !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "append"]
+- ["Ps21RandomAccessIndexable", "init"]
+- !private ["Ps21RandomAccessIndexable", "last"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
+- !private ["Ps26RangeReplaceableCollection", "_Element"]
+- !private ["Ps26RangeReplaceableCollection", "append"]
+- ["Ps26RangeReplaceableCollection", "init"]
+- !private ["Ps26RangeReplaceableCollection", "last"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
+- !private ["Ps25RangeReplaceableIndexable", "_Element"]
+- !private ["Ps25RangeReplaceableIndexable", "append"]
+- ["Ps25RangeReplaceableIndexable", "init"]
+- !private ["Ps25RangeReplaceableIndexable", "last"]
+- !private ["Ps16RawRepresentable", "RawValue"]
+- !private ["Ps16RawRepresentable", "active"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "append"]
+- ["Ps8Sequence", "init"]
+- !private ["Ps8Sequence", "last"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- ["C7SafeNet25StudentMainViewController", "CLLocation"]
+- ["C7SafeNet25StudentMainViewController", "CLLocationManager"]
+- ["C7SafeNet25StudentMainViewController", "MKPointAnnotation"]
+- !private ["C7SafeNet25StudentMainViewController", "UIApplication"]
+- ["C7SafeNet25StudentMainViewController", "deinit"]
+- ["C7SafeNet25StudentMainViewController", "init"]
+- !private ["C7SafeNet25StudentMainViewController", "kCLLocationAccuracyBest"]
+- ["C7SafeNet25StudentMainViewController", "locationManager"]
+- !private ["C7SafeNet25StudentMainViewController", "locationManager.storage"]
+- ["C7SafeNet25StudentMainViewController", "locationManagerDidPauseLocationUpdates"]
+- ["C7SafeNet25StudentMainViewController", "locationManagerDidResumeLocationUpdates"]
+- ["C7SafeNet25StudentMainViewController", "locationManagerShouldDisplayHeadingCalibration"]
+- !private ["C7SafeNet25StudentMainViewController", "locations"]
+- !private ["C7SafeNet25StudentMainViewController", "print"]
+- ["C7SafeNet25StudentMainViewController", "viewDidLoad"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo21UIAppearanceContainer", "CLLocationManager"]
+- ["PSo21UIAppearanceContainer", "MKPointAnnotation"]
+- !private ["PSo21UIAppearanceContainer", "UIApplication"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "kCLLocationAccuracyBest"]
+- ["PSo21UIAppearanceContainer", "locationManager"]
+- ["PSo21UIAppearanceContainer", "locationManager.storage"]
+- ["PSo21UIAppearanceContainer", "locationManagerDidPauseLocationUpdates"]
+- ["PSo21UIAppearanceContainer", "locationManagerDidResumeLocationUpdates"]
+- ["PSo21UIAppearanceContainer", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSo21UIAppearanceContainer", "locations"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo13UIApplication", "applicationState"]
+- ["CSo13UIApplication", "deinit"]
+- !private ["CSo13UIApplication", "shared"]
+- !private ["OSC18UIApplicationState", "RawValue"]
+- !private ["OSC18UIApplicationState", "active"]
+- ["OSC18UIApplicationState", "deinit"]
+- !private ["PSo18UIContentContainer", "CLLocationManager"]
+- ["PSo18UIContentContainer", "MKPointAnnotation"]
+- !private ["PSo18UIContentContainer", "UIApplication"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "kCLLocationAccuracyBest"]
+- ["PSo18UIContentContainer", "locationManager"]
+- ["PSo18UIContentContainer", "locationManager.storage"]
+- ["PSo18UIContentContainer", "locationManagerDidPauseLocationUpdates"]
+- ["PSo18UIContentContainer", "locationManagerDidResumeLocationUpdates"]
+- ["PSo18UIContentContainer", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSo18UIContentContainer", "locations"]
+- !private ["PSo18UIContentContainer", "print"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo18UIFocusEnvironment", "CLLocationManager"]
+- ["PSo18UIFocusEnvironment", "MKPointAnnotation"]
+- !private ["PSo18UIFocusEnvironment", "UIApplication"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "kCLLocationAccuracyBest"]
+- ["PSo18UIFocusEnvironment", "locationManager"]
+- ["PSo18UIFocusEnvironment", "locationManager.storage"]
+- ["PSo18UIFocusEnvironment", "locationManagerDidPauseLocationUpdates"]
+- ["PSo18UIFocusEnvironment", "locationManagerDidResumeLocationUpdates"]
+- ["PSo18UIFocusEnvironment", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSo18UIFocusEnvironment", "locations"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["CSo11UIResponder", "CLLocation"]
+- ["CSo11UIResponder", "CLLocationManager"]
+- ["CSo11UIResponder", "MKPointAnnotation"]
+- !private ["CSo11UIResponder", "UIApplication"]
+- !private ["CSo11UIResponder", "applicationState"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "kCLLocationAccuracyBest"]
+- ["CSo11UIResponder", "locationManager"]
+- ["CSo11UIResponder", "locationManager.storage"]
+- ["CSo11UIResponder", "locationManagerDidPauseLocationUpdates"]
+- ["CSo11UIResponder", "locationManagerDidResumeLocationUpdates"]
+- ["CSo11UIResponder", "locationManagerShouldDisplayHeadingCalibration"]
+- ["CSo11UIResponder", "locations"]
+- !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "shared"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "CLLocationManager"]
+- ["PSo30UIResponderStandardEditActions", "MKPointAnnotation"]
+- !private ["PSo30UIResponderStandardEditActions", "UIApplication"]
+- !private ["PSo30UIResponderStandardEditActions", "applicationState"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "kCLLocationAccuracyBest"]
+- ["PSo30UIResponderStandardEditActions", "locationManager"]
+- ["PSo30UIResponderStandardEditActions", "locationManager.storage"]
+- ["PSo30UIResponderStandardEditActions", "locationManagerDidPauseLocationUpdates"]
+- ["PSo30UIResponderStandardEditActions", "locationManagerDidResumeLocationUpdates"]
+- ["PSo30UIResponderStandardEditActions", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSo30UIResponderStandardEditActions", "locations"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
+- !private ["PSo30UIResponderStandardEditActions", "shared"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo16UIStateRestoring", "CLLocationManager"]
+- ["PSo16UIStateRestoring", "MKPointAnnotation"]
+- !private ["PSo16UIStateRestoring", "UIApplication"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "kCLLocationAccuracyBest"]
+- ["PSo16UIStateRestoring", "locationManager"]
+- ["PSo16UIStateRestoring", "locationManager.storage"]
+- ["PSo16UIStateRestoring", "locationManagerDidPauseLocationUpdates"]
+- ["PSo16UIStateRestoring", "locationManagerDidResumeLocationUpdates"]
+- ["PSo16UIStateRestoring", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSo16UIStateRestoring", "locations"]
+- !private ["PSo16UIStateRestoring", "print"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "CLLocationManager"]
+- ["PSo18UITraitEnvironment", "MKPointAnnotation"]
+- !private ["PSo18UITraitEnvironment", "UIApplication"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "kCLLocationAccuracyBest"]
+- ["PSo18UITraitEnvironment", "locationManager"]
+- ["PSo18UITraitEnvironment", "locationManager.storage"]
+- ["PSo18UITraitEnvironment", "locationManagerDidPauseLocationUpdates"]
+- ["PSo18UITraitEnvironment", "locationManagerDidResumeLocationUpdates"]
+- ["PSo18UITraitEnvironment", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSo18UITraitEnvironment", "locations"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo16UIViewController", "CLLocation"]
+- ["CSo16UIViewController", "CLLocationManager"]
+- ["CSo16UIViewController", "MKPointAnnotation"]
+- !private ["CSo16UIViewController", "UIApplication"]
+- ["CSo16UIViewController", "deinit"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "kCLLocationAccuracyBest"]
+- ["CSo16UIViewController", "locationManager"]
+- ["CSo16UIViewController", "locationManager.storage"]
+- ["CSo16UIViewController", "locationManagerDidPauseLocationUpdates"]
+- ["CSo16UIViewController", "locationManagerDidResumeLocationUpdates"]
+- ["CSo16UIViewController", "locationManagerShouldDisplayHeadingCalibration"]
+- ["CSo16UIViewController", "locations"]
+- !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
+- !private ["Ps14_ArrayProtocol", "_Element"]
+- !private ["Ps14_ArrayProtocol", "append"]
+- ["Ps14_ArrayProtocol", "init"]
+- !private ["Ps14_ArrayProtocol", "last"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps24_DestructorSafeContainer", "last"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "CLLocationManager"]
+- ["Ps9_Hashable", "MKPointAnnotation"]
+- !private ["Ps9_Hashable", "RawValue"]
+- !private ["Ps9_Hashable", "UIApplication"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "active"]
+- !private ["Ps9_Hashable", "applicationState"]
+- !private ["Ps9_Hashable", "coordinate"]
+- !private ["Ps9_Hashable", "delegate"]
+- !private ["Ps9_Hashable", "desiredAccuracy"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "kCLLocationAccuracyBest"]
+- ["Ps9_Hashable", "locationManager"]
+- ["Ps9_Hashable", "locationManager.storage"]
+- ["Ps9_Hashable", "locationManagerDidPauseLocationUpdates"]
+- ["Ps9_Hashable", "locationManagerDidResumeLocationUpdates"]
+- ["Ps9_Hashable", "locationManagerShouldDisplayHeadingCalibration"]
+- ["Ps9_Hashable", "locations"]
+- !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "requestAlwaysAuthorization"]
+- !private ["Ps9_Hashable", "shared"]
+- !private ["Ps9_Hashable", "startUpdatingLocation"]
+- ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "last"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sa"
+- "Ps23BidirectionalCollection"
+- "Ps22BidirectionalIndexable"
+- "Sb"
+- "CSo10CLLocation"
+- "VSC22CLLocationCoordinate2D"
+- !private "CSo17CLLocationManager"
+- "PSo25CLLocationManagerDelegate"
+- "Ps7CVarArg"
+- "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps23ExpressibleByNilLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "Ps9Indexable"
+- "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
+- !private "Ps16IteratorProtocol"
+- !private "Ps25LosslessStringConvertible"
+- !private "PSo12MKAnnotation"
+- "CSo17MKPointAnnotation"
+- !private "CSo7MKShape"
+- !private "Ps10MirrorPath"
+- "Ps17MutableCollection"
+- "Ps16MutableIndexable"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "Sq"
+- "Ps22RandomAccessCollection"
+- "Ps21RandomAccessIndexable"
+- "Ps26RangeReplaceableCollection"
+- "Ps25RangeReplaceableIndexable"
+- !private "Ps16RawRepresentable"
+- "Ps8Sequence"
+- "SS"
+- "C7SafeNet25StudentMainViewController"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- "PSo21UIAppearanceContainer"
+- "CSo13UIApplication"
+- "OSC18UIApplicationState"
+- "PSo18UIContentContainer"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+- "Ps14_ArrayProtocol"
+- "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Users/rrao/Documents/SafeNet/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/rrao/Documents/SafeNet/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/rrao/Documents/SafeNet/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+interface-hash: "23f6a3f15d7986b8b5ff02344a2e68e3"

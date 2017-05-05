@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fc8-zy-Zn3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="6Ng-yB-Lax">
+            <objects>
+                <viewController id="fc8-zy-Zn3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="APc-Km-NVn"/>
+                        <viewControllerLayoutGuide type="bottom" id="ivt-gM-SF0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZA2-tK-P2J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="SafeNet" textAlignment="center" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="LLd-wJ-LvC">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="YZh-MC-cKG"/>
+                                </constraints>
+                                <color key="textColor" red="0.40392156862745099" green="0.22745098039215686" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LLd-wJ-LvC" firstAttribute="centerX" secondItem="ZA2-tK-P2J" secondAttribute="centerX" id="02K-Ky-2TI"/>
+                            <constraint firstItem="LLd-wJ-LvC" firstAttribute="top" secondItem="APc-Km-NVn" secondAttribute="bottom" constant="298" id="3HX-ic-EwW"/>
+                            <constraint firstItem="LLd-wJ-LvC" firstAttribute="centerY" secondItem="ZA2-tK-P2J" secondAttribute="centerY" id="R5V-kB-i42"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QeU-qY-WFz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65" y="103"/>
+        </scene>
+    </scenes>
+</document>

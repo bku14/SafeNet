@@ -1,0 +1,784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CF3F785231BEC60284C35B1 /* Pods_SafeNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A44AFB681E6CF38D5FB097 /* Pods_SafeNet.framework */; };
+		3423D3871E97590100A70CB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3423D3861E97590100A70CB7 /* GoogleService-Info.plist */; };
+		3423D3881E975C8D00A70CB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3423D3861E97590100A70CB7 /* GoogleService-Info.plist */; };
+		3423D3891E975C8D00A70CB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3423D3861E97590100A70CB7 /* GoogleService-Info.plist */; };
+		346D7AB41E975DE5002CD997 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346D7AB31E975DE5002CD997 /* LaunchScreen.storyboard */; };
+		346D7AB61E9760D5002CD997 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346D7AB51E9760D5002CD997 /* Login.storyboard */; };
+		346D7AB81E9767D3002CD997 /* CheckLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D7AB71E9767D3002CD997 /* CheckLoginViewController.swift */; };
+		346D7ABA1EA58B14002CD997 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D7AB91EA58B14002CD997 /* WelcomeScreenViewController.swift */; };
+		346D7ABE1EA5909B002CD997 /* TeacherLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D7ABD1EA5909B002CD997 /* TeacherLoginViewController.swift */; };
+		346D7AC21EA59FA7002CD997 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D7AC11EA59FA7002CD997 /* Extensions.swift */; };
+		346D7AC41EA6DBFA002CD997 /* StudentLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D7AC31EA6DBFA002CD997 /* StudentLoginViewController.swift */; };
+		346D7AC71EA6E454002CD997 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 346D7AC61EA6E454002CD997 /* MapKit.framework */; };
+		346D7AC91EA6E4F0002CD997 /* CreateNewTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D7AC81EA6E4F0002CD997 /* CreateNewTeacherViewController.swift */; };
+		346D7ACB1EBC5E3E002CD997 /* StudentMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D7ACA1EBC5E3E002CD997 /* StudentMainViewController.swift */; };
+		34D13D951E975686001B8840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D13D941E975686001B8840 /* AppDelegate.swift */; };
+		34D13D9C1E975686001B8840 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34D13D9A1E975686001B8840 /* Main.storyboard */; };
+		34D13D9E1E975686001B8840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34D13D9D1E975686001B8840 /* Assets.xcassets */; };
+		34D13DAC1E975686001B8840 /* SafeNetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D13DAB1E975686001B8840 /* SafeNetTests.swift */; };
+		34D13DB71E975686001B8840 /* SafeNetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D13DB61E975686001B8840 /* SafeNetUITests.swift */; };
+		34EBDB3A1EBC79B1001D4324 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EBDB391EBC79B1001D4324 /* MapViewController.swift */; };
+		34EBDB3C1EBC7A25001D4324 /* ClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EBDB3B1EBC7A25001D4324 /* ClassesViewController.swift */; };
+		BFAF50FDED519CDDFE90189F /* Pods_SafeNetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23267F615B8512F0B47A6F99 /* Pods_SafeNetTests.framework */; };
+		C09FF9EEA1C2B459A7C834F5 /* Pods_SafeNetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003EAC110E5F67403059C337 /* Pods_SafeNetUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34D13DA81E975686001B8840 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34D13D891E975685001B8840 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34D13D901E975685001B8840;
+			remoteInfo = SafeNet;
+		};
+		34D13DB31E975686001B8840 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34D13D891E975685001B8840 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34D13D901E975685001B8840;
+			remoteInfo = SafeNet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		003EAC110E5F67403059C337 /* Pods_SafeNetUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafeNetUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CEC2370381A096AA4613D4 /* Pods-SafeNet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafeNet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SafeNet/Pods-SafeNet.debug.xcconfig"; sourceTree = "<group>"; };
+		23267F615B8512F0B47A6F99 /* Pods_SafeNetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafeNetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3423D3861E97590100A70CB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		346D7AB31E975DE5002CD997 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		346D7AB51E9760D5002CD997 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		346D7AB71E9767D3002CD997 /* CheckLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckLoginViewController.swift; sourceTree = "<group>"; };
+		346D7AB91EA58B14002CD997 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
+		346D7ABD1EA5909B002CD997 /* TeacherLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherLoginViewController.swift; sourceTree = "<group>"; };
+		346D7AC11EA59FA7002CD997 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		346D7AC31EA6DBFA002CD997 /* StudentLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentLoginViewController.swift; sourceTree = "<group>"; };
+		346D7AC51EA6E44F002CD997 /* SafeNet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafeNet.entitlements; sourceTree = "<group>"; };
+		346D7AC61EA6E454002CD997 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		346D7AC81EA6E4F0002CD997 /* CreateNewTeacherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewTeacherViewController.swift; sourceTree = "<group>"; };
+		346D7ACA1EBC5E3E002CD997 /* StudentMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentMainViewController.swift; sourceTree = "<group>"; };
+		34D13D911E975686001B8840 /* SafeNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafeNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34D13D941E975686001B8840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		34D13D9B1E975686001B8840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34D13D9D1E975686001B8840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34D13DA21E975686001B8840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34D13DA71E975686001B8840 /* SafeNetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafeNetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34D13DAB1E975686001B8840 /* SafeNetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeNetTests.swift; sourceTree = "<group>"; };
+		34D13DAD1E975686001B8840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34D13DB21E975686001B8840 /* SafeNetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafeNetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34D13DB61E975686001B8840 /* SafeNetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeNetUITests.swift; sourceTree = "<group>"; };
+		34D13DB81E975686001B8840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34EBDB391EBC79B1001D4324 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		34EBDB3B1EBC7A25001D4324 /* ClassesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassesViewController.swift; sourceTree = "<group>"; };
+		47F6667E488436FC0DCAABE8 /* Pods-SafeNetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafeNetTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SafeNetTests/Pods-SafeNetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D984788E346544D28CA5970 /* Pods-SafeNetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafeNetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SafeNetTests/Pods-SafeNetTests.release.xcconfig"; sourceTree = "<group>"; };
+		71A44AFB681E6CF38D5FB097 /* Pods_SafeNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafeNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90925D87284BDE7B4A0CD417 /* Pods-SafeNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafeNet.release.xcconfig"; path = "Pods/Target Support Files/Pods-SafeNet/Pods-SafeNet.release.xcconfig"; sourceTree = "<group>"; };
+		A8CAC0F6958DC90F1553444D /* Pods-SafeNetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafeNetUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SafeNetUITests/Pods-SafeNetUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AFAA2354BD744DCCA662A7D6 /* Pods-SafeNetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafeNetUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SafeNetUITests/Pods-SafeNetUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34D13D8E1E975685001B8840 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346D7AC71EA6E454002CD997 /* MapKit.framework in Frameworks */,
+				2CF3F785231BEC60284C35B1 /* Pods_SafeNet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34D13DA41E975686001B8840 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFAF50FDED519CDDFE90189F /* Pods_SafeNetTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34D13DAF1E975686001B8840 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09FF9EEA1C2B459A7C834F5 /* Pods_SafeNetUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34D13D881E975685001B8840 = {
+			isa = PBXGroup;
+			children = (
+				34D13D931E975686001B8840 /* SafeNet */,
+				34D13DAA1E975686001B8840 /* SafeNetTests */,
+				34D13DB51E975686001B8840 /* SafeNetUITests */,
+				34D13D921E975686001B8840 /* Products */,
+				5CEB49D2CA8020ADB8E7169A /* Pods */,
+				F8193AD7ACDC09AEF5B9DDD3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		34D13D921E975686001B8840 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34D13D911E975686001B8840 /* SafeNet.app */,
+				34D13DA71E975686001B8840 /* SafeNetTests.xctest */,
+				34D13DB21E975686001B8840 /* SafeNetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34D13D931E975686001B8840 /* SafeNet */ = {
+			isa = PBXGroup;
+			children = (
+				346D7AC51EA6E44F002CD997 /* SafeNet.entitlements */,
+				34D13D941E975686001B8840 /* AppDelegate.swift */,
+				346D7AC11EA59FA7002CD997 /* Extensions.swift */,
+				34EBDB391EBC79B1001D4324 /* MapViewController.swift */,
+				34EBDB3B1EBC7A25001D4324 /* ClassesViewController.swift */,
+				346D7AB71E9767D3002CD997 /* CheckLoginViewController.swift */,
+				346D7AB91EA58B14002CD997 /* WelcomeScreenViewController.swift */,
+				346D7ABD1EA5909B002CD997 /* TeacherLoginViewController.swift */,
+				346D7AC31EA6DBFA002CD997 /* StudentLoginViewController.swift */,
+				346D7AC81EA6E4F0002CD997 /* CreateNewTeacherViewController.swift */,
+				346D7ACA1EBC5E3E002CD997 /* StudentMainViewController.swift */,
+				346D7AB31E975DE5002CD997 /* LaunchScreen.storyboard */,
+				34D13D9A1E975686001B8840 /* Main.storyboard */,
+				346D7AB51E9760D5002CD997 /* Login.storyboard */,
+				34D13D9D1E975686001B8840 /* Assets.xcassets */,
+				34D13DA21E975686001B8840 /* Info.plist */,
+				3423D3861E97590100A70CB7 /* GoogleService-Info.plist */,
+			);
+			path = SafeNet;
+			sourceTree = "<group>";
+		};
+		34D13DAA1E975686001B8840 /* SafeNetTests */ = {
+			isa = PBXGroup;
+			children = (
+				34D13DAB1E975686001B8840 /* SafeNetTests.swift */,
+				34D13DAD1E975686001B8840 /* Info.plist */,
+			);
+			path = SafeNetTests;
+			sourceTree = "<group>";
+		};
+		34D13DB51E975686001B8840 /* SafeNetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				34D13DB61E975686001B8840 /* SafeNetUITests.swift */,
+				34D13DB81E975686001B8840 /* Info.plist */,
+			);
+			path = SafeNetUITests;
+			sourceTree = "<group>";
+		};
+		5CEB49D2CA8020ADB8E7169A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04CEC2370381A096AA4613D4 /* Pods-SafeNet.debug.xcconfig */,
+				90925D87284BDE7B4A0CD417 /* Pods-SafeNet.release.xcconfig */,
+				47F6667E488436FC0DCAABE8 /* Pods-SafeNetTests.debug.xcconfig */,
+				6D984788E346544D28CA5970 /* Pods-SafeNetTests.release.xcconfig */,
+				AFAA2354BD744DCCA662A7D6 /* Pods-SafeNetUITests.debug.xcconfig */,
+				A8CAC0F6958DC90F1553444D /* Pods-SafeNetUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F8193AD7ACDC09AEF5B9DDD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				346D7AC61EA6E454002CD997 /* MapKit.framework */,
+				71A44AFB681E6CF38D5FB097 /* Pods_SafeNet.framework */,
+				23267F615B8512F0B47A6F99 /* Pods_SafeNetTests.framework */,
+				003EAC110E5F67403059C337 /* Pods_SafeNetUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34D13D901E975685001B8840 /* SafeNet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34D13DBB1E975686001B8840 /* Build configuration list for PBXNativeTarget "SafeNet" */;
+			buildPhases = (
+				FD84C5CF7A4725FBD49E2B12 /* [CP] Check Pods Manifest.lock */,
+				34D13D8D1E975685001B8840 /* Sources */,
+				34D13D8E1E975685001B8840 /* Frameworks */,
+				34D13D8F1E975685001B8840 /* Resources */,
+				45B7A0E4110269D493CE7C6A /* [CP] Embed Pods Frameworks */,
+				9D234459DA09A1D200FBD1BF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SafeNet;
+			productName = SafeNet;
+			productReference = 34D13D911E975686001B8840 /* SafeNet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		34D13DA61E975686001B8840 /* SafeNetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34D13DBE1E975686001B8840 /* Build configuration list for PBXNativeTarget "SafeNetTests" */;
+			buildPhases = (
+				C8E58ED9A1698EDC3BBE7D3D /* [CP] Check Pods Manifest.lock */,
+				34D13DA31E975686001B8840 /* Sources */,
+				34D13DA41E975686001B8840 /* Frameworks */,
+				34D13DA51E975686001B8840 /* Resources */,
+				599146A2A14F93FA42B338E1 /* [CP] Embed Pods Frameworks */,
+				7CABDD9A49497EC3FB9043A0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34D13DA91E975686001B8840 /* PBXTargetDependency */,
+			);
+			name = SafeNetTests;
+			productName = SafeNetTests;
+			productReference = 34D13DA71E975686001B8840 /* SafeNetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		34D13DB11E975686001B8840 /* SafeNetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34D13DC11E975686001B8840 /* Build configuration list for PBXNativeTarget "SafeNetUITests" */;
+			buildPhases = (
+				E22B0B1FB85CC267FCD08ED0 /* [CP] Check Pods Manifest.lock */,
+				34D13DAE1E975686001B8840 /* Sources */,
+				34D13DAF1E975686001B8840 /* Frameworks */,
+				34D13DB01E975686001B8840 /* Resources */,
+				A5522C633A5CDFACC84F065C /* [CP] Embed Pods Frameworks */,
+				C4D005DE30738A3B5E8FFFA2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34D13DB41E975686001B8840 /* PBXTargetDependency */,
+			);
+			name = SafeNetUITests;
+			productName = SafeNetUITests;
+			productReference = 34D13DB21E975686001B8840 /* SafeNetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34D13D891E975685001B8840 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = SafeNet;
+				TargetAttributes = {
+					34D13D901E975685001B8840 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = DDB4D8NBQN;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					34D13DA61E975686001B8840 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 34D13D901E975685001B8840;
+					};
+					34D13DB11E975686001B8840 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 34D13D901E975685001B8840;
+					};
+				};
+			};
+			buildConfigurationList = 34D13D8C1E975685001B8840 /* Build configuration list for PBXProject "SafeNet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34D13D881E975685001B8840;
+			productRefGroup = 34D13D921E975686001B8840 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34D13D901E975685001B8840 /* SafeNet */,
+				34D13DA61E975686001B8840 /* SafeNetTests */,
+				34D13DB11E975686001B8840 /* SafeNetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34D13D8F1E975685001B8840 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3423D3871E97590100A70CB7 /* GoogleService-Info.plist in Resources */,
+				34D13D9E1E975686001B8840 /* Assets.xcassets in Resources */,
+				346D7AB41E975DE5002CD997 /* LaunchScreen.storyboard in Resources */,
+				346D7AB61E9760D5002CD997 /* Login.storyboard in Resources */,
+				34D13D9C1E975686001B8840 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34D13DA51E975686001B8840 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3423D3881E975C8D00A70CB7 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34D13DB01E975686001B8840 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3423D3891E975C8D00A70CB7 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45B7A0E4110269D493CE7C6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SafeNet/Pods-SafeNet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		599146A2A14F93FA42B338E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SafeNetTests/Pods-SafeNetTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CABDD9A49497EC3FB9043A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SafeNetTests/Pods-SafeNetTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D234459DA09A1D200FBD1BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SafeNet/Pods-SafeNet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5522C633A5CDFACC84F065C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SafeNetUITests/Pods-SafeNetUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4D005DE30738A3B5E8FFFA2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SafeNetUITests/Pods-SafeNetUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8E58ED9A1698EDC3BBE7D3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E22B0B1FB85CC267FCD08ED0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD84C5CF7A4725FBD49E2B12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34D13D8D1E975685001B8840 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34EBDB3A1EBC79B1001D4324 /* MapViewController.swift in Sources */,
+				346D7ABE1EA5909B002CD997 /* TeacherLoginViewController.swift in Sources */,
+				34D13D951E975686001B8840 /* AppDelegate.swift in Sources */,
+				346D7AC41EA6DBFA002CD997 /* StudentLoginViewController.swift in Sources */,
+				346D7ABA1EA58B14002CD997 /* WelcomeScreenViewController.swift in Sources */,
+				34EBDB3C1EBC7A25001D4324 /* ClassesViewController.swift in Sources */,
+				346D7AB81E9767D3002CD997 /* CheckLoginViewController.swift in Sources */,
+				346D7AC21EA59FA7002CD997 /* Extensions.swift in Sources */,
+				346D7AC91EA6E4F0002CD997 /* CreateNewTeacherViewController.swift in Sources */,
+				346D7ACB1EBC5E3E002CD997 /* StudentMainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34D13DA31E975686001B8840 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34D13DAC1E975686001B8840 /* SafeNetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34D13DAE1E975686001B8840 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34D13DB71E975686001B8840 /* SafeNetUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34D13DA91E975686001B8840 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34D13D901E975685001B8840 /* SafeNet */;
+			targetProxy = 34D13DA81E975686001B8840 /* PBXContainerItemProxy */;
+		};
+		34D13DB41E975686001B8840 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34D13D901E975685001B8840 /* SafeNet */;
+			targetProxy = 34D13DB31E975686001B8840 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		34D13D9A1E975686001B8840 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34D13D9B1E975686001B8840 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34D13DB91E975686001B8840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34D13DBA1E975686001B8840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34D13DBC1E975686001B8840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04CEC2370381A096AA4613D4 /* Pods-SafeNet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SafeNet/SafeNet.entitlements;
+				DEVELOPMENT_TEAM = DDB4D8NBQN;
+				INFOPLIST_FILE = SafeNet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SafeNet.SafeNet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		34D13DBD1E975686001B8840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90925D87284BDE7B4A0CD417 /* Pods-SafeNet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SafeNet/SafeNet.entitlements;
+				DEVELOPMENT_TEAM = DDB4D8NBQN;
+				INFOPLIST_FILE = SafeNet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SafeNet.SafeNet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		34D13DBF1E975686001B8840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F6667E488436FC0DCAABE8 /* Pods-SafeNetTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SafeNetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SafeNet.SafeNetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SafeNet.app/SafeNet";
+			};
+			name = Debug;
+		};
+		34D13DC01E975686001B8840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D984788E346544D28CA5970 /* Pods-SafeNetTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SafeNetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SafeNet.SafeNetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SafeNet.app/SafeNet";
+			};
+			name = Release;
+		};
+		34D13DC21E975686001B8840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFAA2354BD744DCCA662A7D6 /* Pods-SafeNetUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SafeNetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SafeNet.SafeNetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SafeNet;
+			};
+			name = Debug;
+		};
+		34D13DC31E975686001B8840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8CAC0F6958DC90F1553444D /* Pods-SafeNetUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SafeNetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SafeNet.SafeNetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SafeNet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34D13D8C1E975685001B8840 /* Build configuration list for PBXProject "SafeNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34D13DB91E975686001B8840 /* Debug */,
+				34D13DBA1E975686001B8840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34D13DBB1E975686001B8840 /* Build configuration list for PBXNativeTarget "SafeNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34D13DBC1E975686001B8840 /* Debug */,
+				34D13DBD1E975686001B8840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34D13DBE1E975686001B8840 /* Build configuration list for PBXNativeTarget "SafeNetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34D13DBF1E975686001B8840 /* Debug */,
+				34D13DC01E975686001B8840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34D13DC11E975686001B8840 /* Build configuration list for PBXNativeTarget "SafeNetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34D13DC21E975686001B8840 /* Debug */,
+				34D13DC31E975686001B8840 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34D13D891E975685001B8840 /* Project object */;
+}
