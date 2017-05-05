@@ -13,6 +13,6 @@ class WelcomeScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.hideTransparentNavigationBar()
+        self.navigationController?.hideTransparentNavigationBar(color: UIColor.white)
     }
 }
